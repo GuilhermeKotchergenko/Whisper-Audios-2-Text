@@ -1,0 +1,11 @@
+[Unit]
+Description=Local Whisper audio watcher
+
+[Service]
+Type=simple
+ExecStart=__PROJECT_DIR__/bin/start-watcher.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
